@@ -29,11 +29,11 @@ ProductsService.updateProducts = async (id, products) => {
         price: products.price,
         coins: products.coins,
     }, { where: { id } });
-    return { code: 200, data: { message: 'Updated!' } };
+    return { code: 200, data: { message: "Updated!" } };
 };
 ProductsService.deleteProducts = async (id) => {
     await products_model_1.default.destroy({ where: { id } });
-    return { code: 200, data: { message: 'Deleted!' } };
+    return { code: 200, data: { message: "Deleted!" } };
 };
 exports.default = ProductsService;
 //# sourceMappingURL=products.service.js.map

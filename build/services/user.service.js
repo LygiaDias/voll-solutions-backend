@@ -9,16 +9,19 @@ class LoginService {
 _a = LoginService;
 LoginService.loginUser = async (email, password) => {
     const getUser = await user_model_1.default.findOne({ where: { email } });
-    if (email === '' || password === '') {
-        return { code: 400, data: { message: 'All fields must be filled' } };
+    if (email === "" || password === "") {
+        return { code: 400, data: { message: "All fields must be filled" } };
     }
     if (!getUser || !bcrypt.compareSync(password, getUser.password)) {
-        return { code: 401, data: { message: 'Incorrect email or password' } };
+        return { code: 401, data: { message: "Incorrect email or password" } };
     }
     const getToken = token_1.default.getToken(email, getUser.role);
     const body = {
         user: {
-            id: getUser.id, username: getUser.username, role: getUser.role, email: getUser.email,
+            id: getUser.id,
+            username: getUser.username,
+            role: getUser.role,
+            email: getUser.email,
         },
         token: getToken,
     };
