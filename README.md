@@ -1,6 +1,6 @@
 # Voll-Backend
 
-Boas vindas ao repositório do Voll-Backend! A aplicação consiste em um CRUD( Create, Read, Update, Delete) de produtos e um endpoint de autenticação para login. Os dados estão armazenados em um banco de dados Postgres online. A aplicação foi criada para uma plataforma de controle de produtos que pode ser acessada através do link https://voll-frontend.netlify.app/
+Boas vindas ao repositório do Voll-Backend! A aplicação consiste em um CRUD( Create, Read, Update, Delete) de produtos e um endpoint de autenticação para login. Os dados estão armazenados em um banco de dados postgresql online. A aplicação foi criada para uma plataforma de controle de produtos que pode ser acessada através do link https://voll-frontend.netlify.app/
 
 
 ### Deploy da aplicação: https://voll-back-store.herokuapp.com 
